@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css"> <!--Font Plus Jakarta Display-->
+
+</head>
+<body>
+    
+    <!-- Inizio nav desktop-->
+    <nav class="nav_desktop">
+        <div class="nav-sx">
+            <a href="chi-sono.html">Chi sono</a>
+            <a href="progetti.html">Progetti</a>
+            <a href="fotografia.html">Fotografia</a>
+        </div>
+
+        <div id="logo">
+            <a href="index.html" class="logo"><img src="images/giulia-ricchio-logo.png" alt="logo" height="60px" width="60px"></a>
+        </div>
+
+        <div class="nav-dx">
+            <a href="blog.html">Blog</a>
+            <a href="contatti.html">Contatti</a>
+            <div class="social-nav">
+                <a href="https://www.linkedin.com/in/giuliaricchio/"><img src="images/icons8-linkedin.svg" alt="LinkedIn"/></a>
+                <a href="https://www.behance.net/giuliaricchio"><img src="images/icons8-behance.svg" alt="Behance"/></a>
+                <a href="https://dribbble.com/giuliaricchio"><img src="images/icons8-dribbble.svg" alt="Dribble"/></a>
+                <a href="https://github.com/ricchio-giulia"><img src="images/icons8-github.svg" alt="GitHub"/></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Fine nav desktop-->
+
+    <!-- Inizio nav mobile-->
+    <nav class="nav_mobile">
+        <div id="hamburger">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <div id="logo">
+                    <a href="index.html" class="logo"><img src="images/giulia-ricchio-logo.png" alt="logo" height="60px" width="60px"></a>
+                </div>
+                <a href="chi-sono.html"><li>Chi sono</li></a>
+                <a href="progetti.html"><li>Progetti</li></a>
+                <a href="fotografia.html"><li>Fotografia</li></a>
+                <a href="blog.html"><li>Blog</li></a>
+                <a href="contatti.html"><li>Contatti</li></a>
+                <div class="social-nav">
+                    <a href="https://www.linkedin.com/in/giuliaricchio/"><img src="images/icons8-linkedin.svg" alt="LinkedIn"/></a>
+                    <a href="https://www.behance.net/giuliaricchio"><img src="images/icons8-behance.svg" alt="Behance"/></a>
+                    <a href="https://dribbble.com/giuliaricchio"><img src="images/icons8-dribbble.svg" alt="Dribble"/></a>
+                    <a href="https://github.com/ricchio-giulia"><img src="images/icons8-github.svg" alt="GitHub"/></a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Fine nav mobile-->
+
+
+    <!-- Inizio content pagina -->
+    <div class="content_pagina_contatti">
+        <h2>Hai domande, consigli o idee da proporre?<br><a href="mailto:ricchiogiulia@gmail.com">Contattami!</a></h2>
+    </div>
+
+
+    <!-- Fine content pagina -->
+
+    <!-- Inizio footer -->
+    <div class="footer">
+        <div class="social-footer">
+            <a href="https://www.linkedin.com/in/giuliaricchio/"><img src="images/icons8-linkedin-white.svg" alt="LinkedIn"/></a>
+            <a href="https://www.behance.net/giuliaricchio"><img src="images/icons8-behance-white.svg" alt="Behance"/></a>
+            <a href="https://dribbble.com/giuliaricchio"><img src="images/icons8-dribbble-white.svg" alt="Dribble"/></a>
+            <a href="https://github.com/ricchio-giulia"><img src="images/icons8-github-white.svg" alt="GitHub"/></a>
+        </div>
+        <p id="copy">Copyright © 2022 Giulia Ricchio | Sito creato con 🤍 e 🧠</p>
+    </div>
+    <!-- Fine footer -->
+
+    <!-- Inizio back to top -->
+
+    <button onclick="topFunction()" class="back-to-top" id="backtotop" title="Torna su">
+        <p>Torna su</p>
+        <img src="images/back-to-top.png" alt="back-to-top">
+    </button>
+    
+    <script>
+    mybutton = document.getElementById("backtotop");
+
+    // Quando l'utente scrolla di 20px il back to top appare
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // Quando l'utente clicca sul back to top, la pagina torna in cima
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera        
+    }
+    </script>
+
+<!-- Fine back to top -->    
+    
+</body>
+</html>
